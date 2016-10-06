@@ -26,5 +26,5 @@ He co-founded Coursera with Daphne Koller, another Stanford computer science pro
 14. Large scale machine learning, stochastic and mini-batch gradient descent, online learning, map reduce
 
 ## Introduction
-The course is offered in Octave/Matlab. R has been my prefered programming language since last couple of years
+The course is offered in Octave/Matlab. R has been my preferred programming language since last couple of years
 and I'm not sure I would want to learn Octave just for the purpose of completing this course. This repository is a R equivalent for the course.
