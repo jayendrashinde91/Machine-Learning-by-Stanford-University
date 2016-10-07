@@ -1,6 +1,5 @@
 # Machine-Learning-by-Stanford-University
-The MOOC: Machine Learning, from Stanford University on [Coursera](https://www.coursera.org/learn/machine-learning), covers machine learning, data mining, 
-and statistical pattern recognition at broad level. More specifically, topics include supervised learning,
+The MOOC: Machine Learning, from Stanford University on [Coursera](https://www.coursera.org/learn/machine-learning), covers machine learning, data mining,and statistical pattern recognition at broad level. More specifically, topics include supervised learning,
 unsupervised learning, best practices in machine learning, case studies and application of learning 
 algorithms for building smart robots, text understanding, computer vision, medical informatics and more.
 Total enrollment since the course’s launch in October 2011 is over one million students, making the MOOC the
