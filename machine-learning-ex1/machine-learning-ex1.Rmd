@@ -42,7 +42,6 @@ Running warmUpExercise
 5x5 Identity Matrix:
 
 ```{r warmup}
-#source("/home/jayendra/iProjects/MOOCs/Machine Learning/R_Solutions/machine-learning-ex1/warmUpExercise.R")
 warmUpExercise()
 ```
 
@@ -50,7 +49,6 @@ warmUpExercise()
 
 Plotting Data ...
 ```{r plot}
-#source("/home/jayendra/iProjects/MOOCs/Machine Learning/R_Solutions/machine-learning-ex1/plotData.R")
 data <- read.table("/home/jayendra/iProjects/MOOCs/Machine Learning/Solutions/machine-learning-ex1/ex1/ex1data1.txt",sep=',')
 X <- data[, 1]
 y <- data[, 2]
@@ -61,8 +59,6 @@ plotData(X, y)
 ## ------------------- Part 3: Gradient descent -------------------
 
 ```{r GD}
-#source("/home/jayendra/iProjects/MOOCs/Machine Learning/R_Solutions/machine-learning-ex1/computeCost.R")
-#source("/home/jayendra/iProjects/MOOCs/Machine Learning/R_Solutions/machine-learning-ex1/gradientDescent.R")
 X <- cbind(rep(1,m),X) # Add a column of ones to x
 X <- as.matrix(X)
 # initialize fitting parameters
