@@ -24,17 +24,6 @@ in this exericse:
 x refers to the population size in 10,000s      
 y refers to the profit in $10,000s
 
-## Initialization
-```{r load}
-rm(list=ls())
-sources <- c("computeCost.R","gradientDescent.R",
-             "plotData.R","warmUpExercise.R")
-for (i in 1:length(sources)) {
-  cat(paste("Loading ",sources[i],"\n"))
-  source(sources[i])
-}
-```
-
 
 ## -------------------- Part 1: Basic Function --------------------
 ##### Complete warmUpExercise.R
