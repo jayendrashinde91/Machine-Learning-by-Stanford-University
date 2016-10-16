@@ -9,7 +9,6 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Jayendra Shinde" />
 
 
 <title>machine-learning-ex1</title>
@@ -116,7 +115,6 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">machine-learning-ex1</h1>
-<h4 class="author"><em>Jayendra Shinde</em></h4>
 
 </div>
 
@@ -129,8 +127,6 @@ $(document).ready(function () {
 <li>plotData.R</li>
 <li>gradientDescent.R</li>
 <li>computeCost.R</li>
-<li>gradientDescentMulti.R</li>
-<li>computeCostMulti.R</li>
 <li>featureNormalize.R</li>
 <li>normalEqn.R</li>
 </ol>
@@ -140,24 +136,17 @@ y refers to the profit in $10,000s</p>
 <div id="initialization" class="section level2">
 <h2>Initialization</h2>
 <pre class="r"><code>rm(list=ls())
-sources &lt;- c(&quot;computeCost.R&quot;,&quot;gradientDescent.R&quot;,
-             &quot;plotData.R&quot;,&quot;warmUpExercise.R&quot;)
-for (i in 1:length(sources)) {
-  cat(paste(&quot;Loading &quot;,sources[i],&quot;\n&quot;))
-  source(sources[i])
+Rfunctions &lt;- c(&quot;warmUpExercise.R&quot;,&quot;plotData.R&quot;,&quot;gradientDescent.R&quot;,&quot;computeCost.R&quot;,&quot;featureNormalize.R&quot;,&quot;normalEqn.R&quot;)
+for (i in 1:length(Rfunctions)) {
+  source(Rfunctions[i])
 }</code></pre>
-<pre><code>## Loading  computeCost.R 
-## Loading  gradientDescent.R 
-## Loading  plotData.R 
-## Loading  warmUpExercise.R</code></pre>
 </div>
 <div id="part-1-basic-function" class="section level2">
 <h2>——————– Part 1: Basic Function ——————–</h2>
 <div id="complete-warmupexercise.r" class="section level5">
 <h5>Complete warmUpExercise.R</h5>
 <p>Running warmUpExercise 5x5 Identity Matrix:</p>
-<pre class="r"><code>#source(&quot;/home/jayendra/iProjects/MOOCs/Machine Learning/R_Solutions/machine-learning-ex1/warmUpExercise.R&quot;)
-warmUpExercise()</code></pre>
+<pre class="r"><code>warmUpExercise()</code></pre>
 <pre><code>##      [,1] [,2] [,3] [,4] [,5]
 ## [1,]    1    0    0    0    0
 ## [2,]    0    1    0    0    0
@@ -169,8 +158,7 @@ warmUpExercise()</code></pre>
 <div id="part-2-plotting" class="section level2">
 <h2>———————– Part 2: Plotting ———————–</h2>
 <p>Plotting Data …</p>
-<pre class="r"><code>#source(&quot;/home/jayendra/iProjects/MOOCs/Machine Learning/R_Solutions/machine-learning-ex1/plotData.R&quot;)
-data &lt;- read.table(&quot;/home/jayendra/iProjects/MOOCs/Machine Learning/Solutions/machine-learning-ex1/ex1/ex1data1.txt&quot;,sep=',')
+<pre class="r"><code>data &lt;- read.table(&quot;/home/jayendra/iProjects/MOOCs/Machine Learning/Solutions/machine-learning-ex1/ex1/ex1data1.txt&quot;,sep=',')
 X &lt;- data[, 1]
 y &lt;- data[, 2]
 m &lt;- length(y) # number of training examples
@@ -179,9 +167,7 @@ plotData(X, y)</code></pre>
 </div>
 <div id="part-3-gradient-descent--" class="section level2">
 <h2>——————- Part 3: Gradient descent ——————-</h2>
-<pre class="r"><code>#source(&quot;/home/jayendra/iProjects/MOOCs/Machine Learning/R_Solutions/machine-learning-ex1/computeCost.R&quot;)
-#source(&quot;/home/jayendra/iProjects/MOOCs/Machine Learning/R_Solutions/machine-learning-ex1/gradientDescent.R&quot;)
-X &lt;- cbind(rep(1,m),X) # Add a column of ones to x
+<pre class="r"><code>X &lt;- cbind(rep(1,m),X) # Add a column of ones to x
 X &lt;- as.matrix(X)
 # initialize fitting parameters
 theta &lt;- c(8,3)
