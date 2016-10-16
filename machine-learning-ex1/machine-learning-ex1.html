@@ -132,14 +132,14 @@ $(document).ready(function () {
 </ol>
 <p>x refers to the population size in 10,000s<br />
 y refers to the profit in $10,000s</p>
-</div>
-<div id="initialization" class="section level2">
-<h2>Initialization</h2>
+<div id="initialization" class="section level3">
+<h3>Initialization</h3>
 <pre class="r"><code>rm(list=ls())
 Rfunctions &lt;- c(&quot;warmUpExercise.R&quot;,&quot;plotData.R&quot;,&quot;gradientDescent.R&quot;,&quot;computeCost.R&quot;,&quot;featureNormalize.R&quot;,&quot;normalEqn.R&quot;)
 for (i in 1:length(Rfunctions)) {
   source(Rfunctions[i])
 }</code></pre>
+</div>
 </div>
 <div id="part-1-basic-function" class="section level2">
 <h2>——————– Part 1: Basic Function ——————–</h2>
@@ -158,7 +158,7 @@ for (i in 1:length(Rfunctions)) {
 <div id="part-2-plotting" class="section level2">
 <h2>———————– Part 2: Plotting ———————–</h2>
 <p>Plotting Data …</p>
-<pre class="r"><code>data &lt;- read.table(&quot;/home/jayendra/iProjects/MOOCs/Machine Learning/Solutions/machine-learning-ex1/ex1/ex1data1.txt&quot;,sep=',')
+<pre class="r"><code>data &lt;- read.table(&quot;ex1data1.txt&quot;,sep=',')
 X &lt;- data[, 1]
 y &lt;- data[, 2]
 m &lt;- length(y) # number of training examples

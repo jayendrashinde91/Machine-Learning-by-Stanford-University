@@ -1,6 +1,6 @@
 ---
 title: "machine-learning-ex1"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -45,7 +45,7 @@ warmUpExercise()
 
 Plotting Data ...
 ```{r plot}
-data <- read.table("/home/jayendra/iProjects/MOOCs/Machine Learning/Solutions/machine-learning-ex1/ex1/ex1data1.txt",sep=',')
+data <- read.table("ex1data1.txt",sep=',')
 X <- data[, 1]
 y <- data[, 2]
 m <- length(y) # number of training examples
