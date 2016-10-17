@@ -51,6 +51,7 @@ y <- data[, 2]
 m <- length(y) # number of training examples
 plotData(X, y)
 ```
+  ![spectra1](https://github.com/jayendrashinde91/Machine-Learning-by-Stanford-University/blob/master/machine-learning-ex1/Images/plot1.png)
 
 ## ------------------- Part 3: Gradient descent -------------------
 
