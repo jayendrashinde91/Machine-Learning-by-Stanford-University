@@ -79,6 +79,9 @@ cat(sprintf('%f %f \n', theta[1], theta[2]))
 plotData(X[,2], y)
 lines(X[, 2], X  %*% theta, col="blue")
 legend("bottomright", c('Training data', 'Linear regression'), pch=c(4,NA),col=c("red","blue"), lty=c(NA,1) )
+ 
+ ![spectra1](https://github.com/jayendrashinde91/Machine-Learning-by-Stanford-University/blob/master/machine-learning-ex1/Images/plot1.png)
+
 # Predict values for population sizes of 35,000 and 70,000
 predict1 <- c(1, 3.5) %*% theta
 cat(sprintf('For population = 35,000, we predict a profit of %f\n',predict1*10000))
