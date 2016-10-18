@@ -1,2 +1,0 @@
-library(corpcor)
-pinv <- pseudoinverse
